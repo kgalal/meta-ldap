@@ -1,11 +1,11 @@
 This Vagrant configuration shows how to use the the meta-ldap server to combine two or more ldap servers
 (some of which could be WindowADs) into a single setup.
 
-It creates a environment with the following servers:
+It creates an environment with the following servers:
 
-- ldap1: an Openldap server using olc configuration, dc=backend1,dc=com
-- ldap2: an Openldap server using olc configuration, dc=backend2,dc=com
-- ldapmeta: a meta-ldap implementation of Openldap, to proxy both ldapmeta1 and ldapmeta2
+- ldap1: an Openldap server using olc configuration, dc=backend1,dc=example
+- ldap2: an Openldap server using olc configuration, dc=backend2,dc=example
+- ldapmeta: a meta-ldap implementation of Openldap, to proxy both ldap1 and ldap2
 - ldapclient: a basic Linux server configured to use ldapmeta as its OpenLDAP server, to demonstrate how you
     login using accounts proxied by ldapmeta
 
@@ -31,3 +31,7 @@ The /etc/openldap/slapd-frontend.conf contains an entry for connecting to a Wind
 need to update this entry to reflect your current WindowsAD (domain, readonly account and password
 for non-anonymous access) for it to work correctly. For license reasons there is no WindowsAD server 
 provided as part of this Vagrant setup.
+
+== Acknowledgements
+
+Most of the scripts used in this setup are based on other contributions available on the internet. The time and effort spent on ensuring a complete setup was part of a project at the European Spallation Source - ERIC. 
