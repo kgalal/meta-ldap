@@ -1,0 +1,20 @@
+dn: dc=backend1,dc=example
+objectClass: top
+objectClass: dcObject
+objectclass: organization
+o: backend1 example
+dc: backend1
+
+dn: cn=Manager,dc=backend1,dc=example
+objectClass: organizationalRole
+cn: Manager
+description: Directory Manager
+
+dn: ou=People,dc=backend1,dc=example
+objectClass: organizationalUnit
+ou: People
+
+dn: ou=Group,dc=backend1,dc=example
+objectClass: organizationalUnit
+ou: Group
+

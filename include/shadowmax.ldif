@@ -1,0 +1,4 @@
+dn: uid=b2user1,ou=People,dc=backend2,dc=example
+changetype: modify
+replace: shadowmax
+shadowmax: -1
