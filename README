@@ -31,3 +31,7 @@ The /etc/openldap/slapd-frontend.conf contains an entry for connecting to a Wind
 need to update this entry to reflect your current WindowsAD (domain, readonly account and password
 for non-anonymous access) for it to work correctly. For license reasons there is no WindowsAD server 
 provided as part of this Vagrant setup.
+
+== Acknowledgements
+
+Most of the scripts used in this setup are based on other contributions available on the internet. The time and effort spent on ensuring a complete setup was part of a project at the European Spallation Source - ERIC. 
