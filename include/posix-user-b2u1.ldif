@@ -1,0 +1,27 @@
+dn: cn=b2user1,ou=Group,dc=backend2,dc=example
+objectClass: top
+objectClass: posixGroup
+cn: b2user1
+userPassword: {crypt}x
+gidNumber: 4001
+
+dn: uid=b2user1,ou=People,dc=backend2,dc=example
+objectClass: top
+objectClass: account
+objectClass: posixAccount
+objectClass: shadowAccount
+cn: b2 user1
+uid: b2user1
+uidNumber: 4001
+gidNumber: 4001
+homeDirectory: /home/b2user1
+loginShell: /bin/bash
+gecos: backend2 User1,Karate Instructor,Room 37B
+userPassword: {SSHA}2Dz1j37oXuLZ02kd8ItlMGZTjXHoaPB1
+shadowLastChange: 17163
+shadowMax: -1
+shadowMin: 1
+shadowWarning: 10
+shadowInactive: 10
+shadowExpire: 17536
+

@@ -1,0 +1,6 @@
+# default hosts in test environment
+192.168.56.134	ldap1.example.com ldap1
+192.168.56.135	ldap2.example.com ldap2
+192.168.56.136	ldapmeta.example.com ldapmeta
+192.168.56.137	ldapclient.example.com ldapclient
+192.168.56.138	windowsad.example.com windowsad

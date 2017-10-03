@@ -1,0 +1,7 @@
+# specify the password generated above for "olcRootPW" section
+# root pw: ldap1234
+
+dn: olcDatabase={0}config,cn=config
+changetype: modify
+add: olcRootPW
+olcRootPW: {SSHA}fdqrGOTfaJ48/+mVw6oq254rgki0RWw9
