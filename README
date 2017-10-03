@@ -1,11 +1,11 @@
 This Vagrant configuration shows how to use the the meta-ldap server to combine two or more ldap servers
 (some of which could be WindowADs) into a single setup.
 
-It creates a environment with the following servers:
+It creates an environment with the following servers:
 
-- ldap1: an Openldap server using olc configuration, dc=backend1,dc=com
-- ldap2: an Openldap server using olc configuration, dc=backend2,dc=com
-- ldapmeta: a meta-ldap implementation of Openldap, to proxy both ldapmeta1 and ldapmeta2
+- ldap1: an Openldap server using olc configuration, dc=backend1,dc=example
+- ldap2: an Openldap server using olc configuration, dc=backend2,dc=example
+- ldapmeta: a meta-ldap implementation of Openldap, to proxy both ldap1 and ldap2
 - ldapclient: a basic Linux server configured to use ldapmeta as its OpenLDAP server, to demonstrate how you
     login using accounts proxied by ldapmeta
 
